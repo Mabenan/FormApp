@@ -1,0 +1,8 @@
+{
+  "/api/*": {
+    "target": "https://mabenan.wufoo.com",
+    "secure": false,
+    "changeOrigin": true,
+    "headers": {"Authorization": "Basic NzBQVC1RUTEzLUNEOVMtTzdSTjpmb290YXN0aWM="}
+  }
+}
