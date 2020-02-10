@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "baseUrl": ".",
+    "paths": {
+      "typeorm": ["node_modules/typeorm/typeorm-model-shim.js"],
+      "typeorm/*": ["node_modules/typeorm/typeorm-model-shim.js"]
+    },
+    "types": []
+  },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/test.ts",
+    "src/**/*.spec.ts"
+  ]
+}

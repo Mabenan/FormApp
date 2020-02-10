@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/spec",
+    "paths": {
+      "typeorm": ["node_modules/typeorm/typeorm-model-shim.js"],
+      "typeorm/*": ["node_modules/typeorm/typeorm-model-shim.js"]
+    },
+    "types": [
+      "jasmine",
+      "node"
+    ]
+  },
+  "files": [
+    "src/test.ts",
+    "src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.spec.ts",
+    "src/**/*.d.ts"
+  ]
+}

@@ -1,0 +1,62 @@
+import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { FieldResponseBody } from '../../../../server/src/types/FieldResponseBody';
+import { Field } from '../../../../server/src/types/field.entity';
+import { EntryPostResponseBody } from '../../../../server/src/types/EntryPostResponseBody';
+import { FieldError } from '../../../../server/src/types/FieldError';
+import { Entry } from '../../:./../../../server/src/types/entry.entity';
+import { Answer } from '../../../../server/src/types/answer.entity';
+
+@Component({
+  selector: 'app-wufoo-form',
+  templateUrl: './wufoo-form.component.html',
+  styleUrls: ['./wufoo-form.component.css']
+})
+export class WufooFormComponent implements OnInit {
+  fields: Field[];
+  answer: object;
+  fieldErrors: FieldError[] = [];
+
+  constructor(private http: HttpClient) {}
+
+  ngOnInit() {
+    this.answer = {};
+    this.http.get('/api/fields/filtered').subscribe(
+      (resp: Field[]) => {
+        // tslint:disable-next-line: no-string-literal
+        this.fields = resp;
+      },
+      err => {
+        console.log(err);
+      }
+    );
+  }
+
+  Submit(value: any) {
+    const body = new Entry();
+    body.Answers = [];
+    for (const field in value) {
+      if (value.hasOwnProperty(field)) {
+        const answer = new Answer();
+        answer.FieldID = Number(field);
+        answer.Answer = value[field];
+        body.Answers.push(answer);
+      }
+    }
+    this.http
+      .post('/api/entries/create', body)
+      .subscribe(
+        (resp: EntryPostResponseBody) => {
+          if (resp.Success === 1) {
+            alert('Daten eingetragen');
+          } else {
+            this.fieldErrors = resp.FieldErrors;
+
+          }
+        },
+        err => {
+          console.log(err);
+        }
+      );
+  }
+}
