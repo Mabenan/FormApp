@@ -3,7 +3,8 @@
   class="example-container"
   (ngSubmit)="Submit(Formular.value)"
 >
-  <div *ngFor="let field of fields | entryIDFilter">
+  <div *ngFor="let field of fields | entryIDFilter"
+  class="formspace">
     <mat-form-field *ngIf="field.Type == 'text'">
       <input
         matInput
@@ -16,6 +17,7 @@
     <mat-form-field *ngIf="field.Type == 'number'">
       <input
         matInput
+        type="number"
         placeholder="{{ field.Title }}"
         id="{{ field.ID }}"
         name="{{ field.ID }}"
@@ -51,6 +53,5 @@
     </mat-form-field>
     <label *ngIf="(fieldErrors | errorFilter:field.ID) !== undefined">{{ (fieldErrors | errorFilter:field.ID).ErrorText }}</label>
   </div>
-
-  <button type="submit" class="btn btn-success">Submit</button>
+  <button mat-button type="submit" class="btn btn-success">Abschicken</button>
 </form>
