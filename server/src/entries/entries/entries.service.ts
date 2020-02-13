@@ -23,7 +23,9 @@ export class EntriesService {
       if(!element.Answer){
         element.Answer = "";
       }
-      this.answerRepository.save(element);
+      this.answerRepository.save(element).catch((reason) => {
+        console.log(reason);
+      });
     });
     return result;
   }
