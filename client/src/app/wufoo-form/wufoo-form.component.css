@@ -3,7 +3,7 @@
   flex-direction: column;
   margin: auto;
   width: 80%;
-  padding: 70px 0;
+
 }
 
 .example-container > * {
@@ -37,4 +37,15 @@
 .btn{
   background-color: green;
   margin-top: 3%;
+}
+
+.centerText{
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+  padding-top: 10px;
+  color: #33FF57;
 }

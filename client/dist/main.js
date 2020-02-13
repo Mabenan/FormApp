@@ -2759,6 +2759,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/fin/fin.component.html":
+/*!******************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/fin/fin.component.html ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n  <mat-label class=\"centerText\">\n    Danke wir freuen uns auf Euch.\n\n  </mat-label>\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/wufoo-form/wufoo-form.component.html":
 /*!********************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/wufoo-form/wufoo-form.component.html ***!
@@ -2768,7 +2781,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<form\n  #Formular=\"ngForm\"\n  class=\"example-container\"\n  (ngSubmit)=\"Submit(Formular.value)\"\n>\n  <div *ngFor=\"let field of fields | entryIDFilter\"\n  class=\"formspace\">\n    <mat-form-field *ngIf=\"field.Type == 'text'\">\n      <input\n        matInput\n        placeholder=\"{{ field.Title }}\"\n        id=\"{{ field.ID }}\"\n        name=\"{{ field.ID }}\"\n        [(ngModel)]=\"answer[field.ID]\"\n      />\n    </mat-form-field>\n    <mat-form-field *ngIf=\"field.Type == 'number'\">\n      <input\n        matInput\n        type=\"number\"\n        placeholder=\"{{ field.Title }}\"\n        id=\"{{ field.ID }}\"\n        name=\"{{ field.ID }}\"\n        [(ngModel)]=\"answer[field.ID]\"\n      />\n    </mat-form-field>\n    <mat-label *ngIf=\"field.Type == 'checkbox'\">{{ field.Title }}</mat-label>\n    <section *ngIf=\"field.Type == 'checkbox'\" multiple>\n      <div class=\"grid\">\n        <mat-checkbox\n          *ngFor=\"let subField of field.SubFields\"\n          id=\"{{ subField.ID }}\"\n          name=\"{{ subField.ID }}\"\n          [(ngModel)]=\"answer[subField.ID]\"\n          >{{ subField.Title }}</mat-checkbox>\n        </div>\n    </section>\n    <mat-form-field\n      *ngIf=\"\n        field.Type != 'checkbox' &&\n        field.Type != 'text' &&\n        field.Type != 'number'\n      \"\n    >\n      <input\n        *ngFor=\"let subField of field.SubFields\"\n        matInput\n        placeholder=\"{{ subField.Title }}\"\n        id=\"{{ subField.ID }}\"\n        name=\"{{ subField.ID }}\"\n        [(ngModel)]=\"answer[subField.ID]\"\n      />\n    </mat-form-field>\n    <label *ngIf=\"(fieldErrors | errorFilter:field.ID) !== undefined\">{{ (fieldErrors | errorFilter:field.ID).ErrorText }}</label>\n  </div>\n  <button mat-button type=\"submit\" class=\"btn btn-success\">Abschicken</button>\n</form>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n  <mat-label class=\"centerText\">\n    Ihr wollt mit Magdalena und Daniel ihre Hochzeit feiern. Ihr habt uns noch keine Rückmeldung geben.\n    Dann seid ihr hier genau richtig!\n\n  </mat-label>\n<form\n  #Formular=\"ngForm\"\n  class=\"example-container\"\n  (ngSubmit)=\"Submit(Formular.value)\"\n>\n  <div *ngFor=\"let field of fields | entryIDFilter\"\n  class=\"formspace\">\n    <mat-form-field *ngIf=\"field.Type == 'text'\">\n      <input\n        matInput\n        placeholder=\"{{ field.Title }}\"\n        id=\"{{ field.ID }}\"\n        name=\"{{ field.ID }}\"\n        [(ngModel)]=\"answer[field.ID]\"\n      />\n    </mat-form-field>\n    <mat-form-field *ngIf=\"field.Type == 'number'\">\n      <input\n        matInput\n        type=\"number\"\n        placeholder=\"{{ field.Title }}\"\n        id=\"{{ field.ID }}\"\n        name=\"{{ field.ID }}\"\n        [(ngModel)]=\"answer[field.ID]\"\n      />\n    </mat-form-field>\n    <mat-label *ngIf=\"field.Type == 'checkbox'\">{{ field.Title }}</mat-label>\n    <section *ngIf=\"field.Type == 'checkbox'\" multiple>\n      <div class=\"grid\">\n        <mat-checkbox\n          *ngFor=\"let subField of field.SubFields\"\n          id=\"{{ subField.ID }}\"\n          name=\"{{ subField.ID }}\"\n          [(ngModel)]=\"answer[subField.ID]\"\n          >{{ subField.Title }}</mat-checkbox>\n        </div>\n    </section>\n    <mat-form-field\n      *ngIf=\"\n        field.Type != 'checkbox' &&\n        field.Type != 'text' &&\n        field.Type != 'number'\n      \"\n    >\n      <input\n        *ngFor=\"let subField of field.SubFields\"\n        matInput\n        placeholder=\"{{ subField.Title }}\"\n        id=\"{{ subField.ID }}\"\n        name=\"{{ subField.ID }}\"\n        [(ngModel)]=\"answer[subField.ID]\"\n      />\n    </mat-form-field>\n    <label *ngIf=\"(fieldErrors | errorFilter:field.ID) !== undefined\">{{ (fieldErrors | errorFilter:field.ID).ErrorText }}</label>\n  </div>\n  <button mat-button type=\"submit\" class=\"btn btn-success\">Abschicken</button>\n</form>\n");
 
 /***/ }),
 
@@ -3015,12 +3028,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _wufoo_form_wufoo_form_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./wufoo-form/wufoo-form.component */ "./src/app/wufoo-form/wufoo-form.component.ts");
+/* harmony import */ var _fin_fin_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./fin/fin.component */ "./src/app/fin/fin.component.ts");
+
 
 
 
 
 const routes = [
-    { path: '', component: _wufoo_form_wufoo_form_component__WEBPACK_IMPORTED_MODULE_3__["WufooFormComponent"] }
+    { path: '', component: _wufoo_form_wufoo_form_component__WEBPACK_IMPORTED_MODULE_3__["WufooFormComponent"] },
+    { path: 'fin', component: _fin_fin_component__WEBPACK_IMPORTED_MODULE_4__["FinComponent"] }
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -3044,7 +3060,7 @@ AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n#main {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: absolute;\r\n  overflow: auto;\r\n  background-color: rgb(0, 0,0, 0.6);\r\n  color: rgba(255,255,255,.7);\r\n}\r\n\r\n#main::after {\r\n  content: \"\";\r\n  background: url('bg.png');\r\n  opacity: 0.5;\r\n  top: 0;\r\n  left: 0;\r\n  bottom: 0;\r\n  right: 0;\r\n  position: absolute;\r\n  z-index: -1;\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-color: grey;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsY0FBYztFQUNkLGtDQUFrQztFQUNsQywyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gseUJBQWlDO0VBQ2pDLFlBQVk7RUFDWixNQUFNO0VBQ04sT0FBTztFQUNQLFNBQVM7RUFDVCxRQUFRO0VBQ1Isa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxzQkFBc0I7RUFDdEIsMkJBQTJCO0VBQzNCLHNCQUFzQjtBQUN4QiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbiNtYWluIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDEwMCU7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIG92ZXJmbG93OiBhdXRvO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigwLCAwLDAsIDAuNik7XHJcbiAgY29sb3I6IHJnYmEoMjU1LDI1NSwyNTUsLjcpO1xyXG59XHJcblxyXG4jbWFpbjo6YWZ0ZXIge1xyXG4gIGNvbnRlbnQ6IFwiXCI7XHJcbiAgYmFja2dyb3VuZDogdXJsKC4uL2Fzc2V0cy9iZy5wbmcpO1xyXG4gIG9wYWNpdHk6IDAuNTtcclxuICB0b3A6IDA7XHJcbiAgbGVmdDogMDtcclxuICBib3R0b206IDA7XHJcbiAgcmlnaHQ6IDA7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHotaW5kZXg6IC0xO1xyXG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XHJcbn1cclxuIl19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n#main {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: absolute;\r\n  overflow: auto;\r\n  background-color: rgb(0, 0,0, 0.6);\r\n  color: rgba(255,255,255,.7);\r\n}\r\n#main::after {\r\n  content: \"\";\r\n  background: url('bg.png');\r\n  opacity: 0.5;\r\n  top: 0;\r\n  left: 0;\r\n  bottom: 0;\r\n  right: 0;\r\n  position: absolute;\r\n  z-index: -1;\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-color: grey;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxrQ0FBa0M7RUFDbEMsMkJBQTJCO0FBQzdCO0FBQ0E7RUFDRSxXQUFXO0VBQ1gseUJBQWlDO0VBQ2pDLFlBQVk7RUFDWixNQUFNO0VBQ04sT0FBTztFQUNQLFNBQVM7RUFDVCxRQUFRO0VBQ1Isa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxzQkFBc0I7RUFDdEIsMkJBQTJCO0VBQzNCLHNCQUFzQjtBQUN4QiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4jbWFpbiB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBvdmVyZmxvdzogYXV0bztcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMCwgMCwwLCAwLjYpO1xyXG4gIGNvbG9yOiByZ2JhKDI1NSwyNTUsMjU1LC43KTtcclxufVxyXG4jbWFpbjo6YWZ0ZXIge1xyXG4gIGNvbnRlbnQ6IFwiXCI7XHJcbiAgYmFja2dyb3VuZDogdXJsKC4uL2Fzc2V0cy9iZy5wbmcpO1xyXG4gIG9wYWNpdHk6IDAuNTtcclxuICB0b3A6IDA7XHJcbiAgbGVmdDogMDtcclxuICBib3R0b206IDA7XHJcbiAgcmlnaHQ6IDA7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHotaW5kZXg6IC0xO1xyXG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XHJcbn1cclxuIl19 */");
 
 /***/ }),
 
@@ -3101,6 +3117,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _filter_EntryIDFilter__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./filter/EntryIDFilter */ "./src/app/filter/EntryIDFilter.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _pipes_errorFilter_pipe__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pipes/errorFilter.pipe */ "./src/app/pipes/errorFilter.pipe.ts");
+/* harmony import */ var _fin_fin_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./fin/fin.component */ "./src/app/fin/fin.component.ts");
+
 
 
 
@@ -3121,7 +3139,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
             _wufoo_form_wufoo_form_component__WEBPACK_IMPORTED_MODULE_5__["WufooFormComponent"],
             _filter_EntryIDFilter__WEBPACK_IMPORTED_MODULE_9__["EntryIDFilter"],
-            _pipes_errorFilter_pipe__WEBPACK_IMPORTED_MODULE_11__["ErrorFilterPipe"]
+            _pipes_errorFilter_pipe__WEBPACK_IMPORTED_MODULE_11__["ErrorFilterPipe"],
+            _fin_fin_component__WEBPACK_IMPORTED_MODULE_12__["FinComponent"],
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -3170,6 +3189,50 @@ EntryIDFilter = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         pure: false
     })
 ], EntryIDFilter);
+
+
+
+/***/ }),
+
+/***/ "./src/app/fin/fin.component.css":
+/*!***************************************!*\
+  !*** ./src/app/fin/fin.component.css ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n.centerText{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n  flex-direction: column;\r\n  margin: auto;\r\n  width: 80%;\r\n  padding-top: 10px;\r\n  color: #33FF57;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbi9maW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7RUFDRSxvQkFBYTtFQUFiLGFBQWE7RUFDYiw0QkFBNEI7RUFDNUIsNkJBQTZCO0VBQzdCLHNCQUFzQjtFQUN0QixZQUFZO0VBQ1osVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixjQUFjO0FBQ2hCIiwiZmlsZSI6ImZpbi9maW4uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4uY2VudGVyVGV4dHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIC13ZWJraXQtYm94LW9yaWVudDogdmVydGljYWw7XHJcbiAgLXdlYmtpdC1ib3gtZGlyZWN0aW9uOiBub3JtYWw7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBtYXJnaW46IGF1dG87XHJcbiAgd2lkdGg6IDgwJTtcclxuICBwYWRkaW5nLXRvcDogMTBweDtcclxuICBjb2xvcjogIzMzRkY1NztcclxufVxyXG4iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/fin/fin.component.ts":
+/*!**************************************!*\
+  !*** ./src/app/fin/fin.component.ts ***!
+  \**************************************/
+/*! exports provided: FinComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FinComponent", function() { return FinComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let FinComponent = class FinComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+FinComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-fin',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./fin.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/fin/fin.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./fin.component.css */ "./src/app/fin/fin.component.css")).default]
+    })
+], FinComponent);
 
 
 
@@ -3362,7 +3425,7 @@ ErrorFilterPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".example-container {\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n          flex-direction: column;\r\n  margin: auto;\r\n  width: 80%;\r\n  padding: 70px 0;\r\n}\r\n\r\n.example-container > * {\r\n  width: 100%;\r\n}\r\n\r\n.grid{\r\n  display: grid\r\n}\r\n\r\n.mat-form-field{\r\n  display: unset !important;\r\n}\r\n\r\n::ng-deep .mat-focused .mat-form-field-label {\r\n  /*change color of label*/\r\n  color: rgba(255,255,255,.7) !important;\r\n }\r\n\r\n::ng-deep.mat-form-field-underline {\r\n  /*change color of underline*/\r\n  background-color: rgba(255,255,255,.7) !important;\r\n}\r\n\r\n::ng-deep.mat-form-field-ripple {\r\n /*change color of underline when focused*/\r\n background-color: rgba(255,255,255,.7) !important;;\r\n}\r\n\r\n.formspace{\r\n  margin-top: 1% !important;\r\n}\r\n\r\n.btn{\r\n  background-color: green;\r\n  margin-top: 3%;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd3Vmb28tZm9ybS93dWZvby1mb3JtLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxvQkFBYTtFQUFiLGFBQWE7RUFDYiw0QkFBc0I7RUFBdEIsNkJBQXNCO1VBQXRCLHNCQUFzQjtFQUN0QixZQUFZO0VBQ1osVUFBVTtFQUNWLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxXQUFXO0FBQ2I7O0FBQ0E7RUFDRTtBQUNGOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0Usd0JBQXdCO0VBQ3hCLHNDQUFzQztDQUN2Qzs7QUFFQTtFQUNDLDRCQUE0QjtFQUM1QixpREFBaUQ7QUFDbkQ7O0FBRUE7Q0FDQyx5Q0FBeUM7Q0FDekMsaURBQWlEO0FBQ2xEOztBQUNBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUNBO0VBQ0UsdUJBQXVCO0VBQ3ZCLGNBQWM7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC93dWZvby1mb3JtL3d1Zm9vLWZvcm0uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5leGFtcGxlLWNvbnRhaW5lciB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIG1hcmdpbjogYXV0bztcclxuICB3aWR0aDogODAlO1xyXG4gIHBhZGRpbmc6IDcwcHggMDtcclxufVxyXG5cclxuLmV4YW1wbGUtY29udGFpbmVyID4gKiB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuLmdyaWR7XHJcbiAgZGlzcGxheTogZ3JpZFxyXG59XHJcblxyXG4ubWF0LWZvcm0tZmllbGR7XHJcbiAgZGlzcGxheTogdW5zZXQgIWltcG9ydGFudDtcclxufVxyXG5cclxuOjpuZy1kZWVwIC5tYXQtZm9jdXNlZCAubWF0LWZvcm0tZmllbGQtbGFiZWwge1xyXG4gIC8qY2hhbmdlIGNvbG9yIG9mIGxhYmVsKi9cclxuICBjb2xvcjogcmdiYSgyNTUsMjU1LDI1NSwuNykgIWltcG9ydGFudDtcclxuIH1cclxuXHJcbiA6Om5nLWRlZXAubWF0LWZvcm0tZmllbGQtdW5kZXJsaW5lIHtcclxuICAvKmNoYW5nZSBjb2xvciBvZiB1bmRlcmxpbmUqL1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjU1LDI1NSwyNTUsLjcpICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbjo6bmctZGVlcC5tYXQtZm9ybS1maWVsZC1yaXBwbGUge1xyXG4gLypjaGFuZ2UgY29sb3Igb2YgdW5kZXJsaW5lIHdoZW4gZm9jdXNlZCovXHJcbiBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDI1NSwyNTUsMjU1LC43KSAhaW1wb3J0YW50OztcclxufVxyXG4uZm9ybXNwYWNle1xyXG4gIG1hcmdpbi10b3A6IDElICFpbXBvcnRhbnQ7XHJcbn1cclxuLmJ0bntcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiBncmVlbjtcclxuICBtYXJnaW4tdG9wOiAzJTtcclxufVxyXG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".example-container {\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n          flex-direction: column;\r\n  margin: auto;\r\n  width: 80%;\r\n\r\n}\r\n\r\n.example-container > * {\r\n  width: 100%;\r\n}\r\n\r\n.grid{\r\n  display: grid\r\n}\r\n\r\n.mat-form-field{\r\n  display: unset !important;\r\n}\r\n\r\n::ng-deep .mat-focused .mat-form-field-label {\r\n  /*change color of label*/\r\n  color: rgba(255,255,255,.7) !important;\r\n }\r\n\r\n::ng-deep.mat-form-field-underline {\r\n  /*change color of underline*/\r\n  background-color: rgba(255,255,255,.7) !important;\r\n}\r\n\r\n::ng-deep.mat-form-field-ripple {\r\n /*change color of underline when focused*/\r\n background-color: rgba(255,255,255,.7) !important;;\r\n}\r\n\r\n.formspace{\r\n  margin-top: 1% !important;\r\n}\r\n\r\n.btn{\r\n  background-color: green;\r\n  margin-top: 3%;\r\n}\r\n\r\n.centerText{\r\n  display: -webkit-box;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n  flex-direction: column;\r\n  margin: auto;\r\n  width: 80%;\r\n  padding-top: 10px;\r\n  color: #33FF57;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInd1Zm9vLWZvcm0vd3Vmb28tZm9ybS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usb0JBQWE7RUFBYixhQUFhO0VBQ2IsNEJBQXNCO0VBQXRCLDZCQUFzQjtVQUF0QixzQkFBc0I7RUFDdEIsWUFBWTtFQUNaLFVBQVU7O0FBRVo7O0FBRUE7RUFDRSxXQUFXO0FBQ2I7O0FBQ0E7RUFDRTtBQUNGOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0Usd0JBQXdCO0VBQ3hCLHNDQUFzQztDQUN2Qzs7QUFFQTtFQUNDLDRCQUE0QjtFQUM1QixpREFBaUQ7QUFDbkQ7O0FBRUE7Q0FDQyx5Q0FBeUM7Q0FDekMsaURBQWlEO0FBQ2xEOztBQUNBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUNBO0VBQ0UsdUJBQXVCO0VBQ3ZCLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxvQkFBYTtFQUFiLGFBQWE7RUFDYiw0QkFBNEI7RUFDNUIsNkJBQTZCO0VBQzdCLHNCQUFzQjtFQUN0QixZQUFZO0VBQ1osVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixjQUFjO0FBQ2hCIiwiZmlsZSI6Ind1Zm9vLWZvcm0vd3Vmb28tZm9ybS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtY29udGFpbmVyIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgbWFyZ2luOiBhdXRvO1xyXG4gIHdpZHRoOiA4MCU7XHJcblxyXG59XHJcblxyXG4uZXhhbXBsZS1jb250YWluZXIgPiAqIHtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG4uZ3JpZHtcclxuICBkaXNwbGF5OiBncmlkXHJcbn1cclxuXHJcbi5tYXQtZm9ybS1maWVsZHtcclxuICBkaXNwbGF5OiB1bnNldCAhaW1wb3J0YW50O1xyXG59XHJcblxyXG46Om5nLWRlZXAgLm1hdC1mb2N1c2VkIC5tYXQtZm9ybS1maWVsZC1sYWJlbCB7XHJcbiAgLypjaGFuZ2UgY29sb3Igb2YgbGFiZWwqL1xyXG4gIGNvbG9yOiByZ2JhKDI1NSwyNTUsMjU1LC43KSAhaW1wb3J0YW50O1xyXG4gfVxyXG5cclxuIDo6bmctZGVlcC5tYXQtZm9ybS1maWVsZC11bmRlcmxpbmUge1xyXG4gIC8qY2hhbmdlIGNvbG9yIG9mIHVuZGVybGluZSovXHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyNTUsMjU1LDI1NSwuNykgIWltcG9ydGFudDtcclxufVxyXG5cclxuOjpuZy1kZWVwLm1hdC1mb3JtLWZpZWxkLXJpcHBsZSB7XHJcbiAvKmNoYW5nZSBjb2xvciBvZiB1bmRlcmxpbmUgd2hlbiBmb2N1c2VkKi9cclxuIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjU1LDI1NSwyNTUsLjcpICFpbXBvcnRhbnQ7O1xyXG59XHJcbi5mb3Jtc3BhY2V7XHJcbiAgbWFyZ2luLXRvcDogMSUgIWltcG9ydGFudDtcclxufVxyXG4uYnRue1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGdyZWVuO1xyXG4gIG1hcmdpbi10b3A6IDMlO1xyXG59XHJcblxyXG4uY2VudGVyVGV4dHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIC13ZWJraXQtYm94LW9yaWVudDogdmVydGljYWw7XHJcbiAgLXdlYmtpdC1ib3gtZGlyZWN0aW9uOiBub3JtYWw7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBtYXJnaW46IGF1dG87XHJcbiAgd2lkdGg6IDgwJTtcclxuICBwYWRkaW5nLXRvcDogMTBweDtcclxuICBjb2xvcjogIzMzRkY1NztcclxufVxyXG4iXX0= */");
 
 /***/ }),
 
@@ -3381,14 +3444,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _server_src_types_entry_entity__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../:./../../../server/src/types/entry.entity */ "../server/src/types/entry.entity.ts");
 /* harmony import */ var _server_src_types_answer_entity__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../server/src/types/answer.entity */ "../server/src/types/answer.entity.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 
 
 
 let WufooFormComponent = class WufooFormComponent {
-    constructor(http) {
+    constructor(http, router) {
         this.http = http;
+        this.router = router;
         this.fieldErrors = [];
     }
     ngOnInit() {
@@ -3415,7 +3481,7 @@ let WufooFormComponent = class WufooFormComponent {
             .post('/api/entries/create', body)
             .subscribe((resp) => {
             if (resp.Success === 1) {
-                alert('Daten eingetragen');
+                this.router.navigate(['fin']);
             }
             else {
                 this.fieldErrors = resp.FieldErrors;
@@ -3426,7 +3492,8 @@ let WufooFormComponent = class WufooFormComponent {
     }
 };
 WufooFormComponent.ctorParameters = () => [
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] }
 ];
 WufooFormComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

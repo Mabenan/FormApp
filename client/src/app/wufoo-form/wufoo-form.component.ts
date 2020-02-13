@@ -6,6 +6,7 @@ import { EntryPostResponseBody } from '../../../../server/src/types/EntryPostRes
 import { FieldError } from '../../../../server/src/types/FieldError';
 import { Entry } from '../../:./../../../server/src/types/entry.entity';
 import { Answer } from '../../../../server/src/types/answer.entity';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-wufoo-form',
@@ -17,7 +18,7 @@ export class WufooFormComponent implements OnInit {
   answer: object;
   fieldErrors: FieldError[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit() {
     this.answer = {};
@@ -48,7 +49,7 @@ export class WufooFormComponent implements OnInit {
       .subscribe(
         (resp: EntryPostResponseBody) => {
           if (resp.Success === 1) {
-            alert('Daten eingetragen');
+            this.router.navigate(['fin']);
           } else {
             this.fieldErrors = resp.FieldErrors;
 

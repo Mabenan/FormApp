@@ -2,6 +2,7 @@ import { Controller, Get } from '@nestjs/common';
 import { Entry } from '../../types/entry.entity';
 import { EntriesService } from './entries.service';
 import { Post,Put, Delete, Body, Param } from  '@nestjs/common';
+import { EntryPostResponseBody } from 'src/types/EntryPostResponseBody';
 @Controller('api/entries')
 export class EntriesController {
     constructor(private entriesService: EntriesService){}
@@ -11,8 +12,14 @@ export class EntriesController {
   }    
   
   @Post('create')
-  async create(@Body() entryData: Entry): Promise<any> {
-    return this.entriesService.create(entryData);
+  async create(@Body() entryData: Entry): Promise<EntryPostResponseBody> {
+    return new Promise<EntryPostResponseBody>((res,rej) => {
+      this.entriesService.create(entryData).then((value) => {
+        res({ Success: 1 } as EntryPostResponseBody);
+      }).catch((reason) => {
+        res({Success: -1, ErrorText: reason } as EntryPostResponseBody);
+      })
+    });
   }  
   
   @Put(':id/update')

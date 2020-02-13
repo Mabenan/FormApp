@@ -10,12 +10,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { EntryIDFilter } from './filter/EntryIDFilter';
 import { FormsModule } from '@angular/forms';
 import { ErrorFilterPipe } from './pipes/errorFilter.pipe';
+import { FinComponent } from './fin/fin.component';
 @NgModule({
   declarations: [
     AppComponent,
     WufooFormComponent,
     EntryIDFilter,
-    ErrorFilterPipe
+    ErrorFilterPipe,
+    FinComponent,
   ],
   imports: [
     BrowserModule,

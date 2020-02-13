@@ -20,6 +20,9 @@ export class EntriesService {
     let result = await this.entryRepository.save(contact);
     contact.Answers.forEach(element => {
       element.Entry = result;
+      if(!element.Answer){
+        element.Answer = "";
+      }
       this.answerRepository.save(element);
     });
     return result;
