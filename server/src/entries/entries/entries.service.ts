@@ -13,7 +13,7 @@ export class EntriesService {
     private answerRepository: Repository<Answer>,
   ) {}
   async findAll(): Promise<Entry[]> {
-    return await this.entryRepository.find({relations : ['SubEntries']});
+    return await this.entryRepository.find({relations : ['Answers']});
   }
 
   async create(contact: Entry): Promise<Entry> {
