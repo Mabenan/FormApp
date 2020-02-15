@@ -18,8 +18,11 @@ import { Entry } from './types/entry.entity';
     FieldsModule,
     EntriesModule,
     TypeOrmModule.forRoot({
-      type: 'sqlite',
-      database: 'db',
+      type: 'mysql',
+      host: 'localhost',
+      database: 'mediaserver',
+      username: 'mediaserver',
+      password: '35xWaH5kUDA1t1xF',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
    }),
