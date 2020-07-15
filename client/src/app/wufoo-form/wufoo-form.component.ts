@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { FieldResponseBody } from '../../../../server/src/types/FieldResponseBody';
-import { Field } from '../../../../server/src/types/field.entity';
-import { EntryPostResponseBody } from '../../../../server/src/types/EntryPostResponseBody';
-import { FieldError } from '../../../../server/src/types/FieldError';
-import { Entry } from '../../:./../../../server/src/types/entry.entity';
-import { Answer } from '../../../../server/src/types/answer.entity';
+import { FieldResponseBody } from '../../../../src/types/FieldResponseBody';
+import { Field } from '../../../../src/types/field.entity';
+import { EntryPostResponseBody } from '../../../../src/types/EntryPostResponseBody';
+import { FieldError } from '../../../../src/types/FieldError';
+import { Entry } from '../../:./../../../src/types/entry.entity';
+import { Answer } from '../../../../src/types/answer.entity';
 import { Router } from '@angular/router';
 
 @Component({

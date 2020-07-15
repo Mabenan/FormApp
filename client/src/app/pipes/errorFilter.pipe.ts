@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { FieldError } from '../../../../server/src/types/FieldError';
+import { FieldError } from '../../../../src/types/FieldError';
 @Pipe({name: 'errorFilter'})
 export class ErrorFilterPipe implements PipeTransform {
   transform(fieldErrors: FieldError[], id?: string): FieldError {

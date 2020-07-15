@@ -8,11 +8,11 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/server/src/main.ts",
-            "cwd": "${workspaceFolder}/server",
-            "outFiles": ["${workspaceFolder}/server/dist/**/*.js"],
+            "program": "${workspaceFolder}/src/main.ts",
+            "cwd": "${workspaceFolder}",
+            "outFiles": ["${workspaceFolder}/dist/**/*.js"],
             "skipFiles": [
-              "${workspaceFolder}/server/node_modules/**/*.js",
+              "${workspaceFolder}/node_modules/**/*.js",
               "<node_internals>/**/*.js"
             ]
           }

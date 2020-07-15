@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Field } from '../../../../server/src/types/field.entity';
+import { Field } from '../../../../src/types/field.entity';
 
 @Pipe({
     name: 'entryIDFilter',
